@@ -33,7 +33,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
         
     }
-    @IBAction func photoLibBtn(_ sender: UIButton) {
+    @IBAction func goToListOfWords(_ sender: UIButton) {
     }
     @IBAction func saveBtn(_ sender: UIButton) {
         
