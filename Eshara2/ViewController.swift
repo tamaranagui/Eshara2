@@ -36,6 +36,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBAction func photoLibBtn(_ sender: UIButton) {
     }
     @IBAction func saveBtn(_ sender: UIButton) {
+        
+        let imageData = UIImageJPEGRepresentation(pickedImage.image!, 0.6)
+        let compressedJPEGImage = UIImage(data: imageData!)
+        UIImageWriteToSavedPhotosAlbum(compressedJPEGImage!, nil, nil, nil)
+        saveAlert()
     }
     
     
@@ -43,6 +48,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     {
         pickedImage.image = image
         self.dismiss (animated: true, completion: nil);
+    }
+    
+    func saveAlert()
+    {
+        let alertController = UIAlertController(title: "Image Saved!", message: "Your picture was successfully saved!", preferredStyle : .alert)
+        let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        present(alertController, animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
+        
     }
 
 }

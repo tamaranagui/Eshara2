@@ -518,6 +518,7 @@
 				3232A0361F2EA0B800EA1FD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3232A0371F2EA0B800EA1FD4 /* Build configuration list for PBXNativeTarget "Eshara2Tests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +527,7 @@
 				3232A0391F2EA0B800EA1FD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3232A03A1F2EA0B800EA1FD4 /* Build configuration list for PBXNativeTarget "Eshara2UITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +536,7 @@
 				3232A03C1F2EA0B800EA1FD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
